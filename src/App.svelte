@@ -31,9 +31,7 @@
         <div class="flex items-center justify-center mb-8">
           <img src="https://hyper.io/logo.svg" class="h-16 w-16" />
         </div>
-        <h1 class="text-3xl font-mono mb-16 text-center">
-          Hyper Docs Sidekick
-        </h1>
+        <h1 class="text-3xl font-mono mb-16 text-center">Hyper Sidekick</h1>
         <form
           on:submit|preventDefault={handleSubmit}
           class="flex flex-col space-y-2 w-full"
@@ -42,7 +40,7 @@
             name="question"
             type="text"
             class="input input-bordered w-full"
-            placeholder="👋🏻 Dev, Ask me a question about the Permaweb?"
+            placeholder="👋🏻 Dev, Ask me a question about hyper?"
             required
           />
           <button class="btn btn-outline">Submit</button>
@@ -54,6 +52,11 @@
             >
           {/if}
         </form>
+        <div class="mt-2 text-sm font-light font-mono text-center">
+          Powered by <a class="link" href="https://otherwill.com">Otherwill</a>
+          - Instant Answers - Just Add Docs -
+          <a class="link" href="https://docs.hyper.io">Hyper Docs</a>
+        </div>
         <div class="mx-auto">
           {#each context.hx as response}
             <div class="card mt-16">
